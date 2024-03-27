@@ -142,6 +142,7 @@
     .variat {
         padding-bottom: 20px;
     }
+   
     ul.conta li {
         display: block;
     }
@@ -202,6 +203,9 @@
     .logo::before {
         width: 292px;
     }
+    ul.conta {
+        margin-bottom: 10px;
+   }
     .header {
         padding: 24px 0px;
     }
@@ -210,6 +214,8 @@
     }
     .bann_img {
         padding-left: 0;
+        max-height: 400px;
+        margin-bottom: -100px;
     }
     .banner_main::before {
         width: 217px;
