@@ -1,253 +1,364 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>Sahil Mobile Care</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/favicon.ico" type="image/ico" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!--[if lt IE 9]>
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>Sahil Mobile Care</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
+    <style>
+      .hero {
+        position: relative;
+      }
+
+      .hero-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* z-index: -1;  */
+      }
+
+      .about {
+        position: relative;
+      }
+
+      .about-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* z-index: -1;  */
+      }
+    </style>
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-   </head>
-   <!-- body -->
-   <body class="main-layout">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
-      </div>
-      <!-- end loader -->
-      <!-- header -->
-      <header>
-         <!-- header inner -->
-         <div class="header">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                     <div class="full">
-                        <div class="center-desk">
-                           <div class="logo">
-                              <a href="index.html"><img src="images/logo12.png" style="height: 100px; width: 100px; margin-top: -20px;" alt="#" /></a>
-                           </div>
-                        </div>
-                     </div>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
+    ><![endif]-->
+  </head>
+  <!-- body -->
+  <body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+      <!-- header inner -->
+      <div class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+              <div class="full">
+                <div class="center-desk">
+                  <div class="logo">
+                    <a href="index.html"
+                      ><img
+                        src="images/logo12.png"
+                        style="height: 100px; width: 100px; margin-top: -20px"
+                        alt="#"
+                    /></a>
                   </div>
-                  <div class="col-xl-7 col-lg-7 col-md-9 col-sm-9">
-                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarsExample04">
-                           <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
-                                 <a class="nav-link" href="index.html">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="about.html">About</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="we-do.html">What we do</a>
-                              </li>
-                              <!-- <li class="nav-item">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-9 col-sm-9">
+              <nav class="navigation navbar navbar-expand-md navbar-dark">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarsExample04"
+                  aria-controls="navbarsExample04"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="we-do.html">What we do</a>
+                    </li>
+                    <!-- <li class="nav-item">
                                  <a class="nav-link" href="pricing.html">Pricing</a>
                               </li> -->
-                              <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contact Us</a>
-                              </li>
-                           </ul>
-                        </div>
-                     </nav>
-                  </div>
-                  <div class="col-md-2">
-                     <ul class="social_icon">
-                        <li><a href="https://www.facebook.com/mobilessahil/?paipv=0&eav=AfZKhEX-ohph1kYzQ6h_PFWrysYTjDyEhjvdT-mTIt_iRCgrOHeXh46PoGKYTUJMTrs&_rdr" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                     </ul>
-                  </div>
-               </div>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
             </div>
-         </div>
-      </header>
-      <!-- end header inner -->
-      <!-- end header -->
-      <!-- banner -->
-      <section class="banner_main">
-         <div id="myCarousel" class="carousel slide banner1" data-ride="carousel">
-            <ol class="carousel-indicators">
-               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1"></li>
-               <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <div class="container-fluid"> 
-                     <div class="carousel-caption relative">
-                        <div class="row d_flex">
-                           <div class="col-md-6">
-                              <img class="bann_img" src="images/banner-2.jpg" alt="#"/>
-                           </div>
-                           <div class="col-md-6">
-                              <span>01/02</span>
-                              <h1>SAHIL MOBILE CARE</h1>
-                              <p> With our expertise, we handle various problems across different brands and models.</p>
-                              <a class="get_btn" href="contact.html" role="button">CONTACT US</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <div class="container-fluid">
-                     <div class="carousel-caption relative">
-                        <div class="row d_flex">
-                           <div class="col-md-6">
-                              <img class="bann_img" src="images/banner-1.jpg" alt="#"/>
-                           </div>
-                           <div class="col-md-6">
-                              <span>02/02</span>
-                              <h1>SERVICES WE OFFER</h1>
-                              <p>Mobile Accessories, Mobile Repair, Mobile Recharge, Recharge Coupon, Photostate, New SIM, HD Movie</p>
-                              <a class="get_btn" href="contact.html" role="button">CONTACT US</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-               <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-               <span class="sr-only">Previous</span>
-               </a>
-               <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-               <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-               <span class="sr-only">Next</span>
-               </a>
+            <div class="col-md-2">
+              <ul class="social_icon">
+                <li>
+                  <a
+                    href="https://www.facebook.com/mobilessahil/?paipv=0&eav=AfZKhEX-ohph1kYzQ6h_PFWrysYTjDyEhjvdT-mTIt_iRCgrOHeXh46PoGKYTUJMTrs&_rdr"
+                    target="_blank"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-linkedin" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
-         </div>
-      </section>
-      <!-- end banner -->
-      <!-- what we do  -->
-      <div class="we_do slin">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>What We Do </h2>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-10 offset-lg-1 col-md-12">
-                  <div class="row">
-                     <div class="col-md-3 col-sm-6">
-                        <div class="we_box">
-                           <i><img src="images/mobile-recharge-icon.png" alt="#"/></i>
-                           <h3>Mobile Recharge</h3>
-                           <p>Airtel, Vodaphone, Idea </p>
-                        </div>
-                     </div>
-                     <div class="col-md-3 col-sm-6">
-                        <div class="we_box">
-                           <i><img src="images/mobile-app-update-icon.png" alt="#"/></i>
-                           <h3>Mobile Software</h3>
-                           <p>App restore, aata backup, mobile reset </p>
-                        </div>
-                     </div>
-                     <div class="col-md-3 col-sm-6">
-                        <div class="we_box">
-                           <i><img src="images/mobile-repair.png" alt="#"/></i>
-                           <h3>Mobile Repair</h3>
-                           <p>Iphone, Samsung, Vivo, Oppo </p>
-                        </div>
-                     </div>
-                     <div class="col-md-3 col-sm-6">
-                        <div class="we_box">
-                           <i><img src="images/phototstate.png" alt="#"/></i>
-                           <h3>Photostate</h3>
-                           <p>All types of paper copy </p>
-                        </div>
-                     </div>
-                     <div class="col-md-3 col-sm-6">
-                        <div class="we_box">
-                           <i><img src="images/mobile-access.png" alt="#"/></i>
-                           <h3>Mobile Accessories</h3>
-                           <p>Charger, headphones, data cables, earpods</p>
-                        </div>
-                     </div>
-                     <div class="col-md-3 col-sm-6">
-                        <div class="we_box">
-                           <i><img src="images/movies.png" alt="#"/></i>
-                           <h3>HD Movie</h3>
-                           <p>Bollywood, punjabi, hollywood </p>
-                        </div>
-                     </div>
-                     <div class="col-md-3 col-sm-6">
-                        <div class="we_box">
-                           <i><img src="images/sim.png" alt="#"/></i>
-                           <h3>New SIM</h3>
-                           <p>Airtel, jio, vi </p>
-                        </div>
-                     </div>
-                     <div class="col-md-3 col-sm-6">
-                        <div class="we_box">
-                           <i><img src="images/rupee.png" alt="#"/></i>
-                           <h3>Recharge Coupon</h3>
-                           <p>Airtel, vodaphone, idea </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+          </div>
+        </div>
       </div>
-      <!-- end what we do  -->
-      <!-- about -->
-      <div class="about slin2">
-         <div class="container">
-            <div class="row d_flex">
-               <div class="col-md-6">
-                  <div class="titlepage">
-                     <h2>About Us</h2>
-                     <p>We're a team of experienced technicians passionate about fixing mobile devices. With our expertise, we handle various problems across different brands and models.We specialize in repairing common mobile issues like cracked screens, water damage, battery problems, and software glitches. Whether it's an iPhone, Android, or any other device, we're here to help.</p>
-                     <!-- <a class="read_more" href="Javascript:void(0)"> Read More</a> -->
+    </header>
+    <!-- end header inner -->
+    <!-- end header -->
+    <!-- banner -->
+    <section class="banner_main">
+      <div
+        id="myCarousel"
+        class="carousel slide banner1 hero"
+        data-ride="carousel"
+      >
+        <video autoplay loop muted class="hero-video">
+          <source src="images/hero.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" style="z-index: 2">
+          <div class="carousel-item active">
+            <div class="container-fluid">
+              <div class="carousel-caption relative">
+                <div class="row d_flex">
+                  <div class="col-md-6">
+                    <img class="bann_img" src="images/banner-2.jpg" alt="#" />
                   </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="about_img">
-                     <figure><img src="images/shop13.png" style="max-height: 400px; object-fit: contain;" alt="#"/></figure>
+                  <div class="col-md-6">
+                    <span class="text-white">01/02</span>
+                    <h1 class="text-white">SAHIL MOBILE CARE</h1>
+                    <p class="text-white">
+                      With our expertise, we handle various problems across
+                      different brands and models.
+                    </p>
+                    <a class="get_btn" href="contact.html" role="button"
+                      >CONTACT US</a
+                    >
                   </div>
-               </div>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid">
+              <div class="carousel-caption relative">
+                <div class="row d_flex">
+                  <div class="col-md-6">
+                    <img class="bann_img" src="images/banner-1.jpg" alt="#" />
+                  </div>
+                  <div class="col-md-6">
+                    <span class="text-white">02/02</span>
+                    <h1 class="text-white">SERVICES WE OFFER</h1>
+                    <p class="text-white">
+                      Mobile Accessories, Mobile Repair, Mobile Recharge,
+                      Recharge Coupon, Photostate, New SIM, HD Movie
+                    </p>
+                    <a class="get_btn" href="contact.html" role="button"
+                      >CONTACT US</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#myCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#myCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
-      <!-- end about -->
-      <!-- our pricing -->
-     
-      <!-- end our pricing -->
-      <!-- experts -->
-      <!-- <div  class="experts slin2">
+    </section>
+    <!-- end banner -->
+    <!-- what we do  -->
+    <div class="we_do slin" style="z-index: 2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+              <h2>What We Do</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1 col-md-12">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="we_box">
+                  <i><img src="images/mobile-recharge-icon.png" alt="#" /></i>
+                  <h3>Mobile Recharge</h3>
+                  <p>Airtel, Vodaphone, Idea</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="we_box">
+                  <i><img src="images/mobile-app-update-icon.png" alt="#" /></i>
+                  <h3>Mobile Software</h3>
+                  <p>App restore, aata backup, mobile reset</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="we_box">
+                  <i><img src="images/mobile-repair.png" alt="#" /></i>
+                  <h3>Mobile Repair</h3>
+                  <p>Iphone, Samsung, Vivo, Oppo</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="we_box">
+                  <i><img src="images/phototstate.png" alt="#" /></i>
+                  <h3>Photostate</h3>
+                  <p>All types of paper copy</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="we_box">
+                  <i><img src="images/mobile-access.png" alt="#" /></i>
+                  <h3>Mobile Accessories</h3>
+                  <p>Charger, headphones, data cables, earpods</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="we_box">
+                  <i><img src="images/movies.png" alt="#" /></i>
+                  <h3>HD Movie</h3>
+                  <p>Bollywood, punjabi, hollywood</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="we_box">
+                  <i><img src="images/sim.png" alt="#" /></i>
+                  <h3>New SIM</h3>
+                  <p>Airtel, jio, vi</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="we_box">
+                  <i><img src="images/rupee.png" alt="#" /></i>
+                  <h3>Recharge Coupon</h3>
+                  <p>Airtel, vodaphone, idea</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end what we do  -->
+    <!-- about -->
+    <div class="about slin2">
+      <video autoplay loop muted class="about-video">
+        <source src="images/about-us.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="container">
+        <div class="row d_flex">
+          <div class="col-md-6">
+            <div class="titlepage">
+              <h2 class="text-white">About Us</h2>
+              <p class="text-white">
+                We're a team of experienced technicians passionate about fixing
+                mobile devices. With our expertise, we handle various problems
+                across different brands and models.We specialize in repairing
+                common mobile issues like cracked screens, water damage, battery
+                problems, and software glitches. Whether it's an iPhone,
+                Android, or any other device, we're here to help.
+              </p>
+              <!-- <a class="read_more" href="Javascript:void(0)"> Read More</a> -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about_img">
+              <figure>
+                <img
+                  src="images/shop13.png"
+                  style="max-height: 400px; object-fit: contain"
+                  alt="#"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end about -->
+    <!-- our pricing -->
+
+    <!-- end our pricing -->
+    <!-- experts -->
+    <!-- <div  class="experts slin2">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
@@ -300,122 +411,176 @@
             </div>
          </div>
       </div> -->
-      <!-- end experts -->
-      <!--  contact -->
-      <div class="contact">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Get In Touch</h2>
-                  </div>
-               </div>
+    <!-- end experts -->
+    <!--  contact -->
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+              <h2>Get In Touch</h2>
             </div>
-            <div class="row">
-               <div class="col-md-6 offset-md-3">
-                  <form id="request" class="main_form">
-                     <div class="row">
-                        <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Full Name" type="type" name="Full Name"> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Email " type="type" name="Email "> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
-                        </div>
-                        <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message</textarea>
-                        </div>
-                        <div class="col-md-12">
-                           <button class="send_btn">Send</button>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="map_main">
-                     <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=127/1+Islam+Ganj+Rd+Punjab+India" width="600" height="386" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-                        
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <form id="request" class="main_form">
+              <div class="row">
+                <div class="col-md-12">
+                  <input
+                    class="contactus"
+                    placeholder="Full Name"
+                    type="type"
+                    name="Full Name"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <input
+                    class="contactus"
+                    placeholder="Email "
+                    type="type"
+                    name="Email "
+                  />
+                </div>
+                <div class="col-md-12">
+                  <input
+                    class="contactus"
+                    placeholder="Phone Number"
+                    type="type"
+                    name="Phone Number"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <textarea
+                    class="textarea"
+                    placeholder="Message"
+                    type="type"
+                    Message="Name"
+                  >
+Message</textarea
+                  >
+                </div>
+                <div class="col-md-12">
+                  <button class="send_btn">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      <!-- end contact -->
-      <!--  footer -->
-      <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-12 col-md-5">
-                     <ul class="conta">
-                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> 127/1, Islam Ganj Rd, Kusht Aashram, Islam Ganj, Ludhiana, Amarpura, Punjab 141008, India</li>
-                     </ul>
-                  </div>
-                  <div class="col-12 col-md-3">
-                     <ul class="conta">
-                        <li><i class="fa fa-phone" aria-hidden="true"></i> Call : +91 70060 38244</li>
-                     </ul>
-                  </div>
-                  <div class="col-12 col-md-4">
-                     <ul class="conta">
-                        <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#"> sourav.ss856@gmail.com</a></li>
-                     </ul>
-                  </div>
-                  <div class=" col-md-6 col-sm-6">
-                     <h3>About </h3>
-                     <p class="variat">We're a team of experienced technicians passionate about fixing mobile devices. With our expertise, we handle various problems across different brands and models.We specialize in repairing common mobile issues like cracked screens, water damage, battery problems, and software glitches. Whether it's an iPhone, Android, or any other device, we're here to help.</p>
-                  </div>
-                  <!-- <div class=" col-md-3 col-sm-6">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="map_main">
+              <div class="map-responsive">
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=127/1+Islam+Ganj+Rd+Punjab+India"
+                  width="600"
+                  height="386"
+                  frameborder="0"
+                  style="border: 0; width: 100%"
+                  allowfullscreen=""
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
+    <!--  footer -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-5">
+              <ul class="conta">
+                <li>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> 127/1,
+                  Islam Ganj Rd, Kusht Aashram, Islam Ganj, Ludhiana, Amarpura,
+                  Punjab 141008, India
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-3">
+              <ul class="conta">
+                <li>
+                  <i class="fa fa-phone" aria-hidden="true"></i> Call : +91
+                  70060 38244
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4">
+              <ul class="conta">
+                <li>
+                  <i class="fa fa-envelope" aria-hidden="true"></i
+                  ><a href="#"> sourav.ss856@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <h3>About</h3>
+              <p class="variat">
+                We're a team of experienced technicians passionate about fixing
+                mobile devices. With our expertise, we handle various problems
+                across different brands and models.We specialize in repairing
+                common mobile issues like cracked screens, water damage, battery
+                problems, and software glitches. Whether it's an iPhone,
+                Android, or any other device, we're here to help.
+              </p>
+            </div>
+            <!-- <div class=" col-md-3 col-sm-6">
                      <h3>Nail Salon  </h3>
                      <p class="variat" >There are many variations of passages of Lorem Ipsum available, but the majority have suffered le</p>
                   </div> -->
-                  <div class="col-md-2 col-sm-6">
-                     <h3>Useful Link</h3>
-                     <ul class="link_menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html"> About</a></li>
-                        <li><a href="we-do.html">What we do</a></li>
-                        <!-- <li><a href="pricing.html">Pricing</a></li> -->
-                        <li class="active"><a href="contact.html">Contact Us</a></li>
-                     </ul>
-                  </div>
-                  <div class="col-md-4 col-sm-6">
-                     <h3>Subscribe</h3>
-                     <form class="bottom_form">
-                        <a class="right_btn" href="Javascript:void(0)"> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                        <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
-                        <!-- <p >There are many variations of passages </p> -->
-                     </form>
-                  </div>
-               </div>
+            <div class="col-md-2 col-sm-6">
+              <h3>Useful Link</h3>
+              <ul class="link_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="we-do.html">What we do</a></li>
+                <!-- <li><a href="pricing.html">Pricing</a></li> -->
+                <li class="active"><a href="contact.html">Contact Us</a></li>
+              </ul>
             </div>
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-10 offset-md-1">
-                        <p>© 2024 All Rights Reserved. <a href="https://themewagon.com">Sahil Mobile Care</a></p>
-                     </div>
-                  </div>
-               </div>
+            <div class="col-md-4 col-sm-6">
+              <h3>Subscribe</h3>
+              <form class="bottom_form">
+                <a class="right_btn" href="Javascript:void(0)">
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i
+                ></a>
+                <input
+                  class="enter"
+                  placeholder="Enter your email"
+                  type="text"
+                  name="Enter your email"
+                />
+                <!-- <p >There are many variations of passages </p> -->
+              </form>
             </div>
-         </div>
-      </footer>
-      <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-   </body>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 offset-md-1">
+                <p>
+                  © 2024 All Rights Reserved.
+                  <a href="https://themewagon.com">Sahil Mobile Care</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>
-
