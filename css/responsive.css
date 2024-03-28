@@ -214,12 +214,13 @@
     }
     .bann_img {
         padding-left: 0;
-        height: 400px;
+        height: 300px;
         margin-bottom: -100px;
+        padding-right: 0;
     }
     .banner_main::before {
         width: 217px;
-        height: 417px;
+        height: 317px;
         z-index: 1;
     }
     .relative span {
