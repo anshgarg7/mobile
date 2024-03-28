@@ -220,6 +220,7 @@
     .banner_main::before {
         width: 217px;
         height: 417px;
+        z-index: 1;
     }
     .relative span {
         padding-top: 126px;
